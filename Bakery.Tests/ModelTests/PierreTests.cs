@@ -26,8 +26,8 @@ namespace PierreBakery.Tests
     [TestMethod]
     public void GetBreadTotal_ReturnsBreadTotalToUser_10()
     {
-      BreadOrder newBreadOrder = new BreadOrder(2);
-      Assert.AreEqual(10, newBreadOrder.GetBreadTotal());
+      BreadOrder newBreadOrder = new BreadOrder(1);
+      Assert.AreEqual(5, newBreadOrder.GetBreadTotal());
     }
 
 

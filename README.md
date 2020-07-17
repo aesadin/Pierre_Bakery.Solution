@@ -21,7 +21,7 @@ This application will allow the user to order a number of either pastry items or
 |-	|-	|-	|
 | Create object constructor that will accept a UserInput 	| 	| typeOf(BreadOrder) |
 | Validate UserInput against criteria (no negative numbers) 	| -1 	| false 	|
-| Parse validated UserInput to WordArray 	| sparkle 	| WordArray =["sparkle"] 	|
+| Create Method that returns order total for 1 loaf of bread| NumberLoaves: 1	| TotalBreadCost = 5 	|
 | Split UserInput WordArray to individual characters (array elements) 	| WordArray=["sparkle"] 	| 1+3+1+1+5+1+1<br>s+p+a+r+k+l+e 	|
 | Compare individual array elements against associated PtTotal 	| "k" 	| "k" = 5 points 	|
 | Sum the individual PtTotal to a TotalScore 	| "sparkle" 	| 1+3+1+1+5+1+1<br>s+p+a+r+k+l+e 	|

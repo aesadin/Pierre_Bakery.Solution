@@ -25,5 +25,14 @@ namespace PierreBakery.Models
       }
     }
 
+    public int GetBreadTotal()
+    {
+      if (NumberLoaves == 1)
+      {
+        this.TotalBreadCost  =  (NumberLoaves * 5);
+      }
+      return this.TotalBreadCost; 
+    }
+
   }
 }
