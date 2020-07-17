@@ -31,6 +31,10 @@ namespace PierreBakery.Models
       {
         this.TotalBreadCost  =  (NumberLoaves * 5);
       }
+      else if (NumberLoaves == 2)
+      {
+        this.TotalBreadCost = (NumberLoaves * 5);
+      }
       return this.TotalBreadCost; 
     }
 

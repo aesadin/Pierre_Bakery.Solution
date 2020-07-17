@@ -33,6 +33,10 @@ namespace PierreBakery.Models
       {
         this.TotalPastryCost  =  (NumberPastries * 2);
       }
+      else if (NumberPastries == 2)
+      {
+        this.TotalPastryCost = (NumberPastries * 4);
+      }
       return this.TotalPastryCost; 
     }
   }  
