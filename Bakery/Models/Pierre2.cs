@@ -26,6 +26,15 @@ namespace PierreBakery.Models
         return false;
       }
     }
+
+    public int GetPastryTotal()
+    {
+      if (NumberPastries == 1)
+      {
+        this.TotalPastryCost  =  (NumberPastries * 2);
+      }
+      return this.TotalPastryCost; 
+    }
   }  
 
 }
