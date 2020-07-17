@@ -1,14 +1,19 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using PierreBakery;
 using PierreBakery.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 
 namespace PierreBakery.Tests
 {
   [TestClass]
-  public class ClassNameTests
+  public class OrderPierreBreadTests
   {
-    // Test methods go here
+    [TestMethod]
+    public void OrderPierreBreadConstructor_ConstructAnInstanceOfBreadClass_1()
+    {
+      OrderPierreBread testOrderPierreBread = new OrderPierreBread("1");
+      Assert.AreEqual("1", testOrderPierreBread.Cost);
+    }
   }
 }
