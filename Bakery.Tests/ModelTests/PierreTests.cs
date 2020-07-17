@@ -23,6 +23,13 @@ namespace PierreBakery.Tests
       Assert.AreEqual(false, newBreadOrder.IsOnlyPositiveNumberCharacters());
     }
 
+    [TestMethod]
+    public void GetBreadTotal_ReturnsBreadTotalToUser_10()
+    {
+      BreadOrder newBreadOrder = new BreadOrder(2);
+      Assert.AreEqual(10, newBreadOrder.GetBreadTotal());
+    }
+
 
       [TestMethod]
     public void PastryOrderConstructor_ConstructAnInstanceOfPastryClass_PastryOrder()
