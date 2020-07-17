@@ -2,32 +2,26 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 using PierreBakery.Models;
 using System;
 using System.Collections.Generic;
-using System.Linq;
+
 
 namespace PierreBakery.Tests
 {
   [TestClass]
-  public class OrderPierreBreadTests
+  public class BreadOrderTests
   {
     [TestMethod]
-    public void OrderPierreBreadConstructor_ConstructAnInstanceOfBreadClass_1()
+    public void BreadOrderConstructor_ConstructAnInstanceOfBreadOrder_BreadOrder()
     {
-      OrderPierreBread testOrderPierreBread = new OrderPierreBread(1);
-      Assert.AreEqual(1, testOrderPierreBread.NumberLoaves);
+      BreadOrder newBreadOrder = new BreadOrder(1);
+      Assert.AreEqual(typeof(BreadOrder), newBreadOrder.GetType());
     }
 
-    [TestMethod]
-    public void GetBreadTotal_ReturnsTotalCostOfBreakOrder_5()
-    {
-      OrderPierreBread testOrderPierreBread = new OrderPierreBread(1);
-      Assert.AreEqual(5, OrderPierreBread.GetBreadTotal());
-    }
 
       [TestMethod]
-    public void OrderPierrePastryConstructor_ConstructAnInstanceOfPastryClass_1()
+    public void PastryOrderConstructor_ConstructAnInstanceOfPastryClass_PastryOrder()
     {
-      OrderPierrePastry testOrderPierrePastry = new OrderPierrePastry(1);
-      Assert.AreEqual(1, testOrderPierrePastry.NumberPastries);
+      PastryOrder newPastryOrder = new PastryOrder(1);
+      Assert.AreEqual(typeof(PastryOrder), newPastryOrder.GetType());
     }
   }
 }
