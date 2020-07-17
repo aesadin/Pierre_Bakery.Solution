@@ -6,10 +6,10 @@ namespace PierreBakery.Models
 {
   public class OrderPierreBread
   {
-    public string NumberLoaves {get; set;}
+    public int NumberLoaves {get; set;}
     public int TotalBreadCost {get; set;}
 
-    public OrderPierreBread(string numberLoaves)
+    public OrderPierreBread(int numberLoaves)
     {
       NumberLoaves = numberLoaves;
       TotalBreadCost = 0;
@@ -18,11 +18,11 @@ namespace PierreBakery.Models
 
     public class OrderPierrePastry
   {
-    public string NumberPastries {get; set;}
+    public int NumberPastries {get; set;}
 
     public int TotalPastryCost{get; set;}
 
-    public OrderPierrePastry(string numberPastries)
+    public OrderPierrePastry(int numberPastries)
     {
       NumberPastries = numberPastries;
       TotalPastryCost = 0;
