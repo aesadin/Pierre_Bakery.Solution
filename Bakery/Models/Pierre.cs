@@ -41,5 +41,17 @@ namespace PierreBakery.Models
       NumberPastries = numberPastries;
       TotalPastryCost = 0;
     }
+
+    public bool IsOnlyPositiveNumberCharacters2()
+    {
+      if (NumberPastries > 0)
+      {
+        return true;
+      }
+      else
+      {
+        return false;
+      }
+    }
   }
 }
