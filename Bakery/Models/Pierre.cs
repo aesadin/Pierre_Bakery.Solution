@@ -1,6 +1,10 @@
-namespace ProjectName.Models
+using System;
+using System.Linq;
+
+
+namespace PierreBakery.Models
 {
-  public class ClassName
+  public class Pierre
   {
     // properties, constructors, methods, etc. go here
   }

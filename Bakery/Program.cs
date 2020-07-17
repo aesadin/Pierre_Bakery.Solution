@@ -1,4 +1,7 @@
 using System;
+using PierreBakery;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace ProjectName
 {
@@ -6,7 +9,7 @@ namespace ProjectName
   {
     public static void Main()
     {
-      //Code goes here!
+      Console.WriteLine("Welcome to Pierre's Bakery")
     }
   }
 }

@@ -1,7 +1,10 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using ProjectName;
+using PierreBakery;
+using PierreBakery.Models;
+using System.Collections.Generic;
+using System.Linq;
 
-namespace ProjectName.Tests
+namespace PierreBakery.Tests
 {
   [TestClass]
   public class ClassNameTests
