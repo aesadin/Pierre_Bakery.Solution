@@ -18,6 +18,14 @@ namespace PierreBakery.Models
 
     public class OrderPierrePastry
   {
-    public string NumberPastry {get; set;}
+    public string NumberPastries {get; set;}
+
+    public int TotalPastryCost{get; set;}
+
+    public OrderPierrePastry(string numberPastries)
+    {
+      NumberPastries = numberPastries;
+      TotalPastryCost = 0;
+    }
   }
 }
