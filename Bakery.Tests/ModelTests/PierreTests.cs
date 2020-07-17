@@ -16,6 +16,13 @@ namespace PierreBakery.Tests
       Assert.AreEqual(typeof(BreadOrder), newBreadOrder.GetType());
     }
 
+    [TestMethod]
+    public void IsOnlyPositiveNumberCharacters_ChecksIfInputIsIntOfNumberChars_False()
+    {
+      BreadOrder newBreadOrder = new BreadOrder(-1);
+      Assert.AreEqual(false, newBreadOrder.IsOnlyPositiveNumberCharacters());
+    }
+
 
       [TestMethod]
     public void PastryOrderConstructor_ConstructAnInstanceOfPastryClass_PastryOrder()

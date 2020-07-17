@@ -2,6 +2,7 @@ using System;
 
 
 
+
 namespace PierreBakery.Models
 {
   public class BreadOrder
@@ -13,6 +14,18 @@ namespace PierreBakery.Models
     {
       NumberLoaves = numberLoaves;
       TotalBreadCost = 0;
+    }
+
+    public bool IsOnlyPositiveNumberCharacters()
+    {
+      if (NumberLoaves > 0)
+      {
+        return true;
+      }
+      else
+      {
+        return false;
+      }
     }
 
   }

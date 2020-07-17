@@ -19,8 +19,8 @@ This application will allow the user to order a number of either pastry items or
 
 | Spec 	| Input 	| Output 	|
 |-	|-	|-	|
-| Create object constructor that will accept a UserInput 	| "sparkle" 	| Your scrabble word is "sparkle" 	|
-| Validate UserInput against criteria (no non-alpha) 	| R2d2 	| "no non-alpha characters" 	|
+| Create object constructor that will accept a UserInput 	| 	| typeOf(BreadOrder) |
+| Validate UserInput against criteria (no alpha) 	| b 	| "no alpha characters" 	|
 | Parse validated UserInput to WordArray 	| sparkle 	| WordArray =["sparkle"] 	|
 | Split UserInput WordArray to individual characters (array elements) 	| WordArray=["sparkle"] 	| 1+3+1+1+5+1+1<br>s+p+a+r+k+l+e 	|
 | Compare individual array elements against associated PtTotal 	| "k" 	| "k" = 5 points 	|
