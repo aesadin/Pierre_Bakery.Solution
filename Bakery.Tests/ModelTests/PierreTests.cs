@@ -13,7 +13,7 @@ namespace PierreBakery.Tests
     public void OrderPierreBreadConstructor_ConstructAnInstanceOfBreadClass_1()
     {
       OrderPierreBread testOrderPierreBread = new OrderPierreBread("1");
-      Assert.AreEqual("1", testOrderPierreBread.Cost);
+      Assert.AreEqual("1", testOrderPierreBread.NumberLoaves);
     }
   }
 }

@@ -6,11 +6,16 @@ namespace PierreBakery.Models
 {
   public class OrderPierreBread
   {
-    public string Cost {get; set;}
+    public string NumberLoaves {get; set;}
+
+    public OrderPierreBread(string numberLoaves)
+    {
+      NumberLoaves = numberLoaves;
+    }
   }
 
     public class OrderPierrePastry
   {
-    // properties, constructors, methods, etc. go here
+    public string NumberPastry {get; set;}
   }
 }
