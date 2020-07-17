@@ -44,5 +44,12 @@ namespace PierreBakery.Tests
       PastryOrder newPastryOrder = new PastryOrder(-1);
       Assert.AreEqual(false, newPastryOrder.IsOnlyPositiveNumberCharacters2());
     }
+
+    [TestMethod]
+    public void GetPastryTotal_ReturnsPastryTotalToUser_10()
+    {
+      PastryOrder newPastryOrder = new PastryOrder(1);
+      Assert.AreEqual(2, newPastryOrder.GetPastryTotal());
+    }
   }
 }
