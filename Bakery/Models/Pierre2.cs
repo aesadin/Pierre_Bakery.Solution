@@ -29,13 +29,13 @@ namespace PierreBakery.Models
 
     public int GetPastryTotal()
     {
-      if (NumberPastries == 1)
+      if (NumberPastries == 1 || NumberPastries == 2)
       {
         this.TotalPastryCost  =  (NumberPastries * 2);
       }
-      else if (NumberPastries == 2)
+      else if (NumberPastries == 3)
       {
-        this.TotalPastryCost = (NumberPastries * 4);
+        this.TotalPastryCost = 5;
       }
       return this.TotalPastryCost; 
     }

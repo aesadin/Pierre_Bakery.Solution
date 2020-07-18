@@ -23,25 +23,8 @@ This application will allow the user to order a number of either pastry items or
 | Validate UserInput against criteria (no negative numbers) 	| -1 	| false 	|
 | Create Method that returns order total for 1 loaf of bread| NumberLoaves: 1	| TotalBreadCost = 5 	|
 | Create Method that returns order total for 2 loaf of bread 	| NumberLoaves: 2	| TotalBreadCost = 10|
-| Compare individual array elements against associated PtTotal 	| "k" 	| "k" = 5 points 	|
-| Sum the individual PtTotal to a TotalScore 	| "sparkle" 	| 1+3+1+1+5+1+1<br>s+p+a+r+k+l+e 	|
-| Return TotalScore 	| "sparkle" 	| "Your scrabble word score is: 13 pts" 	|
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+| Create Method that adds 1 loaf for every two loaves purchased 	| NumberLoaves: 2 	| TotalLoaves = 3 	|
+| Create Method that adds OrderBread total and OrderPastry total together| OrderBreadTotal: 10, OrderPastryTotal: 5	| TotalCost = 15	|
 
 
 

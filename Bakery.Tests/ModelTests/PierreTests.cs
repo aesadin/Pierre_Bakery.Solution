@@ -53,5 +53,12 @@ namespace PierreBakery.Tests
       PastryOrder newPastryOrder = new PastryOrder(1);
       Assert.AreEqual(2, newPastryOrder.GetPastryTotal());
     }
+
+    [TestMethod]
+    public void GetPastryTotal_ReturnsPastryTotalToUser_4()
+    {
+      PastryOrder newPastryOrder = new PastryOrder(2);
+      Assert.AreEqual(4, newPastryOrder.GetPastryTotal());
+    }
   }
 }
