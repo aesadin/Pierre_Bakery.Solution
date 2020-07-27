@@ -1,5 +1,5 @@
 using System;
-using PierreBakery;
+using PierreBakery.Models;
 using System.Collections.Generic;
 
 
@@ -16,14 +16,23 @@ namespace PierreBakery
 
     public static void Start()
     {
-      Console.WriteLine("Would you like to add bread or pastry to your order? Bread/Pastry");
-      //string userResponse = Console.ReadLine();
+      Console.WriteLine("How many loaves of Bread would you like?");
+      BreadOrder newBreadOrder = new BreadOrder(int.Parse(Console.ReadLine()));
 
-      //if (userResponse.ToUpper() == "BREAD")
+      if (newBreadOrder.IsOnlyPositiveNumberCharacters())
       {
-        // Console.WriteLine("Enter the number of loaves you would like");
-        // BreadOrder newBreadOrder = new BreadOrder(Console.ReadLine().Parse());
+        Console.WriteLine("Here is your bread order total: $" + (newBreadOrder.GetBreadTotal()));
       }
+
+      Console.WriteLine("How many pastries would you like?");
+      PastryOrder newPastryOrder = new PastryOrder(int.Parse(Console.ReadLine()));
+
+      if (newPastryOrder.IsOnlyPositiveNumberCharacters2())
+      {
+        Console.WriteLine("Here is your pastry order total: $" + (newPastryOrder.GetPastryTotal()));
+      }
+
+      Console.WriteLine("Here is your grand total: $" + (newBreadOrder.GetBreadTotal() + newPastryOrder.GetPastryTotal()));
     }
   }
 }

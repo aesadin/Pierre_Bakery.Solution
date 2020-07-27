@@ -1,6 +1,5 @@
 using System;
 
-
 namespace PierreBakery.Models
 {
   public class PastryOrder
@@ -9,7 +8,7 @@ namespace PierreBakery.Models
 
     public int TotalPastryCost{get; set;}
 
-    public PastryOrder(int numberPastries)
+    public PastryOrder (int numberPastries)
     {
       NumberPastries = numberPastries;
       TotalPastryCost = 0;
@@ -29,13 +28,13 @@ namespace PierreBakery.Models
 
     public int GetPastryTotal()
     {
-      if (NumberPastries == 1 || NumberPastries == 2)
+      if (NumberPastries > 0 && NumberPastries % 2 == 0)
       {
-        this.TotalPastryCost  =  (NumberPastries * 2);
+        this.TotalPastryCost  =  (NumberPastries * 2 - 1);
       }
-      else if (NumberPastries == 3)
+      else 
       {
-        this.TotalPastryCost = 5;
+        this.TotalPastryCost = (NumberPastries * 2);
       }
       return this.TotalPastryCost; 
     }

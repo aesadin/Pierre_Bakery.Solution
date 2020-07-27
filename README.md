@@ -37,7 +37,7 @@ This application will allow the user to order a number of either pastry items or
 
 *  _Recommended browser for everything in life. [Google Chrome](https://www.google.com/chrome/)_.
 
-*  _Github [repository](https://github.com/tmemmerson/Scrabble.Solution.git)_
+*  _Github [repository](https://github.com/aesadin/Pierre_Bakery.Solution.git)_
 
 
 
@@ -45,7 +45,7 @@ This application will allow the user to order a number of either pastry items or
 
 * Download [Visual Studio Code](https://code.visualstudio.com/) (v1.45)
 
-* Download ZIP [here](https://github.com/tmemmerson/Scrabble.Solution.git) OR if you are comfortable cloning a repo, copy the link as shown below.
+* Download ZIP [here](https://github.com/aesadin/Pierre_Bakery.Solution.git) OR if you are comfortable cloning a repo, copy the link as shown below.
 
 ![cloning](https://coding-assets.s3-us-west-2.amazonaws.com/img/clone.gif "How to clone repo")
 
@@ -74,13 +74,13 @@ This application will allow the user to order a number of either pastry items or
 
 ## **Known Bugs**
 
- _No Known Bugs: 7/16/2020_
+ _No Known Bugs, however business logic and UI logic not to completion 7/17/2020_
 
 <br>
 
 ## **Support and contact details**
 
-_Questions, comments and concerns can be directed to the author(s) [Tristan Emmerson](tristan@stickerslug.com)_
+_Questions, comments and concerns can be directed to the author(s) [Allison Sadin](aesadin@gmail.com)_
 
 <br>
 
@@ -104,4 +104,4 @@ _MSTest_
 
 [logo]: https://img.shields.io/bower/l/bootstrap "MIT License"
 
-Copyright (c) 2020 **_[Tristan Emmerson](tristan@stickerslug.com), [Allison Sadin](aesadin@gmail.com)
+Copyright (c) 2020 **_[Allison Sadin](aesadin@gmail.com)_
