@@ -27,9 +27,9 @@ namespace PierreBakery.Models
 
     public int GetBreadTotal()
     {
-      if (NumberLoaves > 0 && NumberLoaves % 3 == 0)
+      if (NumberLoaves % 3 == 0)
       {
-        this.TotalBreadCost  =  (NumberLoaves * 5 - 5);
+        this.TotalBreadCost = ((NumberLoaves*5) - ((NumberLoaves/3)*5));
       }
       else
       {

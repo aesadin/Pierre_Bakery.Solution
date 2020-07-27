@@ -28,9 +28,9 @@ namespace PierreBakery.Models
 
     public int GetPastryTotal()
     {
-      if (NumberPastries > 0 && NumberPastries % 2 == 0)
+      if (NumberPastries % 3 == 0)
       {
-        this.TotalPastryCost  =  (NumberPastries * 2 - 1);
+        this.TotalPastryCost = (5 * (NumberPastries/3)) - (NumberPastries/3);
       }
       else 
       {

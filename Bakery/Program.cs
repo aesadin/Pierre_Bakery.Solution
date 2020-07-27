@@ -23,6 +23,11 @@ namespace PierreBakery
       {
         Console.WriteLine("Here is your bread order total: $" + (newBreadOrder.GetBreadTotal()));
       }
+      else
+      {
+        Console.WriteLine("Please enter a positive number");
+        Start();
+      }
 
       Console.WriteLine("How many pastries would you like?");
       PastryOrder newPastryOrder = new PastryOrder(int.Parse(Console.ReadLine()));
@@ -30,6 +35,11 @@ namespace PierreBakery
       if (newPastryOrder.IsOnlyPositiveNumberCharacters2())
       {
         Console.WriteLine("Here is your pastry order total: $" + (newPastryOrder.GetPastryTotal()));
+      }
+      else
+      {
+        Console.WriteLine("Please enter a positive number");
+        Start();
       }
 
       Console.WriteLine("Here is your grand total: $" + (newBreadOrder.GetBreadTotal() + newPastryOrder.GetPastryTotal()));
