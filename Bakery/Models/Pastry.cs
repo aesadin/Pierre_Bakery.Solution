@@ -11,7 +11,7 @@ namespace PierreBakery.Models
     public PastryOrder (int numberPastries)
     {
       NumberPastries = numberPastries;
-      TotalPastryCost = 2 * NumberPastries;
+      TotalPastryCost = 2;
     }
 
     public bool IsOnlyPositiveNumberCharacters2()
@@ -28,12 +28,12 @@ namespace PierreBakery.Models
 
     public int GetPastryTotal()
     {
+      int newPastryTotal = TotalPastryCost * NumberPastries;
       if (NumberPastries > 2)
       {
-        TotalPastryCost -= (2 * (NumberPastries/5));
+        newPastryTotal -= ((NumberPastries/3) * 1);
       }
-      return TotalPastryCost; 
+      return newPastryTotal; 
     }
   }  
-
 }
