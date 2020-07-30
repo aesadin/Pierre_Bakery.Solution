@@ -7,7 +7,7 @@ using System.Collections.Generic;
 namespace PierreBakery.Tests
 {
   [TestClass]
-  public class BreadOrderTests
+  public class PastryOrderTests
   {
     [TestMethod]
     public void BreadOrderConstructor_ConstructAnInstanceOfBreadOrder_BreadOrder()

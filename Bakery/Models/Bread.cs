@@ -10,7 +10,7 @@ namespace PierreBakery.Models
     public BreadOrder(int numberLoaves)
     {
       NumberLoaves = numberLoaves;
-      TotalBreadCost = 0;
+      TotalBreadCost = 5 * NumberLoaves;
     }
 
     public bool IsOnlyPositiveNumberCharacters()
@@ -25,17 +25,13 @@ namespace PierreBakery.Models
       }
     }
 
-    public int GetBreadTotal()
+    public int GetBreadTotal()  
     {
-      if (NumberLoaves % 3 == 0)
+      if (NumberLoaves > 2)
       {
-        this.TotalBreadCost = ((NumberLoaves*5) - ((NumberLoaves/3)*5));
+        TotalBreadCost -= ((NumberLoaves/3)*5);
       }
-      else
-      {
-        this.TotalBreadCost = (NumberLoaves * 5);
-      }
-      return this.TotalBreadCost; 
+      return TotalBreadCost; 
     }
   }
 }
